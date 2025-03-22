@@ -1,0 +1,17 @@
+{
+  "name": "allura-cypress",
+  "version": "1.0.0",
+  "description": "Cypress: automatizando testes E2E na aplicação AdoPet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Alves",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^10.9.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  }
+}
