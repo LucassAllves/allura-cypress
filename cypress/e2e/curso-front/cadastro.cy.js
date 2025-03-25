@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
-describe("Teste Front End", () => {
-    it("Acessando a pagina", () => {
+describe("Teste funcionais de cadastro", () => {
+    it("Deve acessar a pagina home", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/")
     })
 
-    it("Criando cadastrado", () => {
+    it("Deve preencher os campos do formulário corretamente para cadastrar um novo usuário", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/")
         cy.contains("a", "Cadastrar").click()
         cy.get('[data-test="input-name"]').type("Teste 1234")
@@ -15,29 +15,29 @@ describe("Teste Front End", () => {
         cy.get('[data-test="submit-button"]').click()
     })
 
-    it("Visite a página de principal do AdoPet e clique no botão ‘Ver pets disponíveis para adoção”", () => {
+    it("Deve visitar a página de principal do AdoPet e clicar no botão ‘Ver pets disponíveis para adoção”", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/")
         cy.contains("a", "Ver pets disponíveis para adoção").click()
     })
 
-    it("Visite a página de principal do AdoPet e teste os botões header", () => {
+    it("Deve visitar a página de principal do AdoPet e teste os botões header", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/")
         cy.get('.header__home').click()
         cy.get('.header__message').click()
 
     })
 
-    it("Visite a página de /login do Adopet", () => {
+    it("Deve visitar a página de /login do Adopet", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/login")
 
     })
 
-    it("Visite a página de /home do Adopet", () => {
+    it("Deve visitar a página de /home do Adopet", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/home")
 
     })
 
-    it("Visite a página de /home do AdoPet e clique no botão “Falar com o responsável”.", () => {
+    it("Deve visitar a página de /home do AdoPet e clicar no botão “Falar com o responsável”.", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/login")
         cy.get('[data-test="input-loginEmail"]').type("la@gmail.com")
         cy.get('[data-test="input-loginPassword"]').type("HlucasAlves1")
