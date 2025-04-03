@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "ufagba",
   video: true,
   reporter: 'mochawesome',
   reporterOptions: {
