@@ -11,11 +11,7 @@ describe("Teste funcionais de cadastro", () => {
 
     it("Deve preencher os campos do formulário corretamente para cadastrar um novo usuário", () => {
         cy.contains("a", "Cadastrar").click()
-        cy.get('[data-test="input-name"]').type("Teste 1234")
-        cy.get('[data-test="input-email"]').type("la@gmail.com")
-        cy.get('[data-test="input-password"]').type('HlucasAlves1')
-        cy.get('[data-test="input-confirm-password"]').type('HlucasAlves1')
-        cy.get('[data-test="submit-button"]').click()
+        cy.cadatrar("Teste 1234", "la@gmail.com", "HlucasAlves1")
     })
 
     it("Deve visitar a página de principal do AdoPet e clicar no botão ‘Ver pets disponíveis para adoção”", () => {

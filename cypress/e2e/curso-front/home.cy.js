@@ -1,6 +1,7 @@
 describe('Home page', () => {
     it("Deve visitar a página de /home do Adopet", () => {
         cy.visit("https://adopet-frontend-cypress.vercel.app/home")
+            .get('[class=card] img').should('have.length', 9)
 
     })
 
