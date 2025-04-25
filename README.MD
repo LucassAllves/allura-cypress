@@ -141,6 +141,6 @@ Quer saber mais sobre o framework? Acesse a [documentação oficial do Cypress](
 ## 👨‍💻 Autor
 
 Desenvolvido por **Lucas**, QA e entusiasta de automação de testes.  
-Entre em contato via [LinkedIn](#) ou [GitHub](#).
+Entre em contato via [LinkedIn](https://www.linkedin.com/in/lucas-alves-la) ou [GitHub](https://github.com/LucassAllves).
 
 ---
